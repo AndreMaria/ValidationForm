@@ -1,0 +1,5 @@
+<div [formGroup]="formGroup">
+  <label for="controlName">Nome</label>
+  <input [formControlName]="controlName" [class.error]="isInvalid(controlName)">
+  <label class="error" *ngIf="isInvalid(controlName, 'required')" for="Email">Campo obrigatório</label>
+</div>

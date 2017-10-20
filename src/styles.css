@@ -1,1 +1,157 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.error {
+  clear: both;
+  color: #f85757;
+  display: block;
+  margin-top: 8px;
+}
+
+input[type="text"] {
+  width: 15%;
+  padding-top: 5px;
+  padding-left: 5px;
+  max-height: 12.5rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  background: #fff;
+  border: 1px solid #c9c9c7;
+  z-index: 10;
+  overflow-x: hidden;
+  transition: all ease 2s;
+}
+
+
+label {
+  clear: both;
+  color: #090909;
+  display: block;
+  margin-top: 8px;
+}
+
+label.error {
+  clear: both;
+  color: #f85757;
+  display: block;
+  margin-top: 8px;
+}
+
+button,
+[role="button"],
+[type="button"], .avisos > a:last-child, .simple-upload label, .crop-image div label, #usuarios img + div span {
+  font-family: interfaceBold;
+  background-color: #f7931d;
+  display: inline-block;
+  min-height: 2.5rem;
+  padding-top: 8px;
+  padding-left: 24px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.208;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 200ms ease, border 200ms ease, padding 200ms ease;
+}
+
+/* line 77, assets/styles/common/tools/mixins/_default-feedback.scss */
+button:hover,
+[role="button"]:hover,
+[type="button"]:hover, .avisos > a:hover:last-child, .simple-upload label:hover, .crop-image div label:hover, #usuarios img + div span:hover {
+  background-color: #da7e12;
+}
+
+/* line 83, assets/styles/common/tools/mixins/_default-feedback.scss */
+button:focus,
+[role="button"]:focus,
+[type="button"]:focus, .avisos > a:focus:last-child, .simple-upload label:focus, .crop-image div label:focus, #usuarios img + div span:focus {
+  background-color: #febc11;
+}
+
+/* line 89, assets/styles/common/tools/mixins/_default-feedback.scss */
+button:active,
+[role="button"]:active,
+[type="button"]:active, .avisos > a:active:last-child, .simple-upload label:active, .crop-image div label:active, #usuarios img + div span:active {
+  background-color: #706f6f;
+}
+
+/* line 3, assets/styles/common/elements/forms/_button.scss */
+button,
+[role="button"],
+[type="button"] {
+  text-align: center;
+  position: relative;
+}
+
+/* line 10, assets/styles/common/elements/forms/_button.scss */
+button:disabled,
+[role="button"]:disabled,
+[type="button"]:disabled {
+  color: #e0e0e0;
+  background: #c9c9c7;
+  cursor: default;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  padding: 24px 24px;
+  margin-bottom: 24px;
+}
+
+.card-config textarea + span {
+  float: right;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.card-config {
+  position: relative;
+  margin: 24px auto 0;
+  padding: 24px;
+  background-color: #e6e7e8;
+}
+
+.card-config ul li {
+  font-family: interfaceBold;
+  width: 100%;
+  margin-left: 1.85185%;
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+
+.card-config label .error {
+  clear: both;
+  color: #f85757;
+  display: block;
+  margin-top: 8px;
+}
+
+a.try-again {
+  width: 25%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card-config .try-again {
+  width: 37.5%;
+  margin: 24px auto;
+  display: block;
+}
+.card-config a {
+  color: #febc11;
+}
+
+li {
+  list-style: none;
+}
+
+li label {
+  list-style: none;
+  display: block;
+}
+

@@ -1,0 +1,19 @@
+<form [formGroup]="ativarUsuarioForm" (ngSubmit)="ativarUsuario()">
+  <div>
+      <app-filho [formGroup]="ativarUsuarioForm" controlName="endereco-usuario" [required]="true" >
+      </app-filho>
+      <label for="controlName">Email</label>
+      <input type="text" id="cadastrar-email" name="cadastrar-email" [(ngModel)]="email" formControlName="email" [class.error]="isInvalid('email')">
+      <label class="error" *ngIf="isInvalid('email', 'required')" for="Email">Campo obrigatório</label>
+      <label>Cidade</label>
+      <app-autocomplete [url]=url ></app-autocomplete>
+  </div>
+  <div>
+    <button type="submit" #submit>Enviar</button>
+  </div>
+</form>
+<div>
+<h2>{{test}}</h2>
+</div>
+<label for="">{{mensagem}}</label>
+
