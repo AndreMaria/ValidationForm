@@ -61,4 +61,7 @@ export class FornularioComponent implements OnInit {
       }
   }
 
+  isHabilitarPeriodo() {
+      this.ativarUsuarioForm.get('email').disable();
+  }
 }

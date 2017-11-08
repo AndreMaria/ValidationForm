@@ -3,7 +3,7 @@
       <app-filho [formGroup]="ativarUsuarioForm" controlName="endereco-usuario" [required]="true" >
       </app-filho>
       <label for="controlName">Email</label>
-      <input type="text" id="cadastrar-email" name="cadastrar-email" [(ngModel)]="email" formControlName="email" [class.error]="isInvalid('email')">
+      <input type="text" id="cadastrar-email" name="cadastrar-email" [(ngModel)]="email" formControlName="email" [class.error]="isInvalid('email')" [disabled]="isHabilitarPeriodo()" >
       <label class="error" *ngIf="isInvalid('email', 'required')" for="Email">Campo obrigatório</label>
       <label>Cidade</label>
       <app-autocomplete [url]=url ></app-autocomplete>
